@@ -1,4 +1,15 @@
 @charset "UTF-8";
+header .navbar .navbar-nav .search-form {
+  position: relative;
+  transition: 0.3s;
+  width: 0;
+}
+header .navbar .navbar-nav .search-form button {
+  position: absolute;
+  right: 0.5rem;
+  top: 50%;
+  transform: translateY(-50%);
+}
 header .navbar .navbar-nav .nav-link:hover {
   color: #474747 !important;
 }
@@ -11852,6 +11863,7 @@ textarea.form-control-lg {
   background-image: url("../assets/bg-hero.webp");
   background-repeat: no-repeat;
   background-size: cover;
+  background-position: bottom;
   min-height: 600px;
   max-height: 800px;
   position: relative;
@@ -11942,13 +11954,22 @@ textarea.form-control-lg {
   color: #777;
 }
 
-.blog .article .image {
+.blog .article .card, .articles .article .card {
+  transition: 0.3s;
+}
+.blog .article .card:hover, .articles .article .card:hover {
+  transform: scale(1.1, 1.1);
+}
+.blog .article .card .image, .articles .article .card .image {
   height: 280px;
 }
-.blog .article .image img {
+.blog .article .card .image img, .articles .article .card .image img {
   object-fit: cover;
 }
-.blog .article .date-view {
+.blog .article .card .title, .articles .article .card .title {
+  height: 40px;
+}
+.blog .article .card .date-view, .articles .article .card .date-view {
   color: #aaa;
 }
 
@@ -12004,6 +12025,117 @@ footer .overlay {
 footer .container {
   position: relative;
   z-index: 1000;
+}
+
+.plant .swiper .image, .our-plants .swiper .image, .article .swiper .image {
+  height: 300px;
+}
+@media (min-width: 500px) {
+  .plant .swiper .image, .our-plants .swiper .image, .article .swiper .image {
+    height: 400px;
+  }
+}
+@media (min-width: 768px) {
+  .plant .swiper .image, .our-plants .swiper .image, .article .swiper .image {
+    height: 300px;
+  }
+}
+.plant .swiper .swiper-button-prev::after, .plant .swiper .swiper-button-next::after, .our-plants .swiper .swiper-button-prev::after, .our-plants .swiper .swiper-button-next::after, .article .swiper .swiper-button-prev::after, .article .swiper .swiper-button-next::after {
+  font-size: 20px;
+  background-color: #619d09;
+  color: white;
+  padding: 0.5rem;
+  border-radius: 50%;
+}
+.plant .related-plants .related-plant, .plant .related-plants .related-article, .plant .related-articles .related-plant, .plant .related-articles .related-article, .our-plants .related-plants .related-plant, .our-plants .related-plants .related-article, .our-plants .related-articles .related-plant, .our-plants .related-articles .related-article, .article .related-plants .related-plant, .article .related-plants .related-article, .article .related-articles .related-plant, .article .related-articles .related-article {
+  position: relative;
+  transition: 0.3s;
+  overflow: hidden;
+}
+.plant .related-plants .related-plant:hover, .plant .related-plants .related-article:hover, .plant .related-articles .related-plant:hover, .plant .related-articles .related-article:hover, .our-plants .related-plants .related-plant:hover, .our-plants .related-plants .related-article:hover, .our-plants .related-articles .related-plant:hover, .our-plants .related-articles .related-article:hover, .article .related-plants .related-plant:hover, .article .related-plants .related-article:hover, .article .related-articles .related-plant:hover, .article .related-articles .related-article:hover {
+  transform: scale(1.1, 1.1);
+}
+.plant .related-plants .related-plant:hover .overlay, .plant .related-plants .related-article:hover .overlay, .plant .related-articles .related-plant:hover .overlay, .plant .related-articles .related-article:hover .overlay, .our-plants .related-plants .related-plant:hover .overlay, .our-plants .related-plants .related-article:hover .overlay, .our-plants .related-articles .related-plant:hover .overlay, .our-plants .related-articles .related-article:hover .overlay, .article .related-plants .related-plant:hover .overlay, .article .related-plants .related-article:hover .overlay, .article .related-articles .related-plant:hover .overlay, .article .related-articles .related-article:hover .overlay {
+  height: 25%;
+}
+.plant .related-plants .related-plant:hover .info, .plant .related-plants .related-article:hover .info, .plant .related-articles .related-plant:hover .info, .plant .related-articles .related-article:hover .info, .our-plants .related-plants .related-plant:hover .info, .our-plants .related-plants .related-article:hover .info, .our-plants .related-articles .related-plant:hover .info, .our-plants .related-articles .related-article:hover .info, .article .related-plants .related-plant:hover .info, .article .related-plants .related-article:hover .info, .article .related-articles .related-plant:hover .info, .article .related-articles .related-article:hover .info {
+  bottom: 1rem;
+}
+.plant .related-plants .related-plant .image img, .plant .related-plants .related-article .image img, .plant .related-articles .related-plant .image img, .plant .related-articles .related-article .image img, .our-plants .related-plants .related-plant .image img, .our-plants .related-plants .related-article .image img, .our-plants .related-articles .related-plant .image img, .our-plants .related-articles .related-article .image img, .article .related-plants .related-plant .image img, .article .related-plants .related-article .image img, .article .related-articles .related-plant .image img, .article .related-articles .related-article .image img {
+  object-fit: cover;
+}
+.plant .related-plants .related-plant .overlay, .plant .related-plants .related-article .overlay, .plant .related-articles .related-plant .overlay, .plant .related-articles .related-article .overlay, .our-plants .related-plants .related-plant .overlay, .our-plants .related-plants .related-article .overlay, .our-plants .related-articles .related-plant .overlay, .our-plants .related-articles .related-article .overlay, .article .related-plants .related-plant .overlay, .article .related-plants .related-article .overlay, .article .related-articles .related-plant .overlay, .article .related-articles .related-article .overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 0;
+  background-color: white;
+  opacity: 0.4;
+  border-radius: 8px;
+  transition: 0.3s;
+}
+.plant .related-plants .related-plant .info, .plant .related-plants .related-article .info, .plant .related-articles .related-plant .info, .plant .related-articles .related-article .info, .our-plants .related-plants .related-plant .info, .our-plants .related-plants .related-article .info, .our-plants .related-articles .related-plant .info, .our-plants .related-articles .related-article .info, .article .related-plants .related-plant .info, .article .related-plants .related-article .info, .article .related-articles .related-plant .info, .article .related-articles .related-article .info {
+  transition: 0.3s;
+  bottom: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+.player {
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 16px;
+  background: white;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+}
+.player .controls button {
+  font-size: 20px;
+  cursor: pointer;
+  border: 2px solid #474747;
+  border-radius: 50%;
+  background-color: transparent;
+}
+.player #progress {
+  -webkit-appearance: none;
+  width: 100%;
+  height: 6px;
+  border-radius: 10px;
+  background: linear-gradient(to right, #474747 0%, #619d09 100%);
+  outline: none;
+  overflow: hidden;
+}
+.player #progress::-webkit-slider-runnable-track {
+  background-color: linear-gradient(to right, #474747 0%, #619d09 100%);
+  height: 6px;
+}
+.player #progress::-moz-range-progress {
+  background: #ff9800;
+}
+.player #progress::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+  margin-top: -5px;
+}
+.player #progress::-moz-range-thumb {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background: white;
+  cursor: pointer;
+}
+.player #volune {
+  width: 200px;
+}
+.player .time {
+  margin: 10px 0;
+  font-size: 14px;
+  font-weight: 500;
+  color: black;
 }
 
 .fs--9 {

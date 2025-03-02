@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/fontawesome/all.min.css">
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <title>Sansevieria trifasciata</title>
+</head>
+<body>
+    
+    <header class="bg-primary">
+            <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                  <a class="navbar-brand text-white fs-5 fw-bold" href="#">Nursey</a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse " id="navbarNavAltMarkup">
+                    <div class="navbar-nav ms-auto">
+                      <a class="nav-link text-white fw-medium text-uppercase"  href="index.html">home</a>
+                      <a class="nav-link text-secondary fw-medium text-uppercase"  href="plants.html">plants</a>
+                      <a class="nav-link text-white fw-medium text-uppercase" href="about.html">about us</a>
+                      <a class="nav-link text-white fw-medium text-uppercase" aria-current="page" href="service.html">services</a>
+                      <a class="nav-link text-white fw-medium text-uppercase" href="blog.html">blog</a>
+                      <a class="nav-link text-white fw-medium text-uppercase" href="contact.html">contact</a>
+                      <div class="nav-item d-flex align-items-center">
+                        <form class="search-form d-none" id="search-form" method="GET">
+                          <input type="search" name="search" placeholder="Search Anything " class="rounded-pill bg-primary text-white form-control  px-3 py-1">
+                          <button type="submit" class="border-0 bg-transparent"><i class="fa-solid fa-search text-white"></i></button>
+                        </form>
+                        <button class="nav-link search-icon" id="search-icon"><i class="fa-solid fa-search"></i></button>
+                      </div>
+                      <div class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                          <i class="fa-solid fa-globe"></i> En
+                        </a>
+                        <ul class="dropdown-menu border-0 shadow bg-primary">
+                          <li><a class="dropdown-item text-white fw-semibold" href="#">Frensh</a></li>
+                          <li><a class="dropdown-item text-white fw-semibold" href="#">Arabic</a></li>
+                          <li><a class="dropdown-item text-white fw-semibold" href="#">Chineese</a></li>
+                        </ul>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+            </nav>
+    </header>
+
+    <section class="hero">
+         <div class="container">
+          <div class="content text-center">
+            <h1 class="text-capitalize title fw-bold text-secondary mb-4">Sansevieria trifasciata</h1>
+            <p class="description mx-auto text-secondary fw-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Magnam harum dolor facere, voluptates in distinctio optio ullam incidunt odit magni?</p>
+          </div>
+         </div>
+    </section>
+
+    <section class="plant">
+        <div class="container">
+            <div class="row my-5">
+                <div class="col-lg-9">
+                  <div class="swiper mb-3">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="image m-3 d-flex align-items-center justify-content-center">
+                          <img src="assets/articles/sanseviearia trifasciata.jpg" class="image rounded w-100" alt="">
+                        </div>  
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="image m-3 d-flex align-items-center justify-content-center">
+                          <img src="assets/articles/Sansevieria-Lotus-Sansevieria-2.avif" class="image rounded w-100" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="image m-3 d-flex align-items-center justify-content-center">
+                          <img src="assets/articles/Sansevieria trifasciata3.webp" class="image rounded w-100" alt="">
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="image m-3 d-flex align-items-center justify-content-center">
+                          <img src="assets/articles/Sansevieria trifasciata4.jpg" class="image rounded w-100" alt="">
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-button-prev"></div>
+                    <div class="swiper-button-next"></div>
+                  </div>
+                  <div class="mp3">
+                    <div class="player">
+                      <audio id="audio" src="assets/mp3/audio.mp3"></audio>
+                      <div class="d-flex align-items-center justify-content-between gap-3">
+                        <div class="controls">
+                            <button id="play"><i class="fa-solid fa-play text-secondary px-1 py-2"></i></button>
+                        </div>
+                        <input type="range" id="progress" value="0">
+                      </div>
+                      <div class="d-flex align-items-center justify-content-between">
+                        <div class="time">
+                            <span id="current-time">0:00</span> / 
+                            <span id="duration">0:00</span>
+                        </div>
+                        <input type="range" id="volume" value="1" step="0.01" min="0" max="1">
+                      </div>
+                  </div>
+                  </div>
+                  <div class="description">
+                      <p class="gray-700"><strong>Sansevieria trifasciata</strong>, commonly known as the snake plant or mother-in-law’s tongue, is a hardy, evergreen perennial native to West Africa, particularly found in regions like Nigeria and the Congo. This plant is well known for its striking, upright, sword-shaped leaves that exhibit a dark green color with light green, gray, or yellow variegation. Its architectural appearance makes it a popular choice for indoor decoration, complementing various interior designs. Additionally, it has earned a reputation for being one of the most resilient and low-maintenance houseplants, thriving even in neglectful conditions.</p>
+                      <p class="gray-700">One of the standout qualities of Sansevieria trifasciata is its adaptability to different lighting conditions. While it prefers bright, indirect light for optimal growth, it can also tolerate low-light environments, making it an excellent choice for offices or rooms with limited sunlight. Unlike many other plants, it can even survive in artificial lighting, which further adds to its versatility. In terms of watering, this plant requires minimal care; it is highly drought-tolerant and should only be watered when the soil is completely dry. Overwatering can lead to root rot, which is one of the few problems that may threaten its health. Well-draining soil, such as a cactus or succulent mix, is recommended to prevent excess moisture retention.</p>
+                      <p class="gray-700">
+                        Sansevieria trifasciata is not only aesthetically pleasing but also beneficial for air purification. It is one of the plants studied by NASA for its ability to filter out toxins from the air, including formaldehyde, benzene, xylene, and trichloroethylene. This makes it an excellent addition to indoor spaces, particularly in urban environments where air quality can be compromised. The plant is also unique because it performs photosynthesis at night, releasing oxygen and improving air quality while you sleep. This characteristic makes it a preferred choice for bedrooms and enclosed spaces.
+                        The snake plant is relatively easy to propagate, making it ideal for plant enthusiasts who want to expand their collection. It can be propagated through leaf cuttings or by dividing its rhizomes. Leaf cuttings should be left to dry for a day or two before being planted in soil to prevent rotting. Rhizome division is a quicker method and is best done when repotting the plant. Since it has a slow to moderate growth rate, repotting is only necessary every few years, preferably in the spring or summer.
+                        Despite its many benefits, Sansevieria trifasciata is mildly toxic to pets and humans if ingested. The plant contains saponins, which can cause nausea, vomiting, and digestive discomfort if consumed. Therefore, it should be kept out of reach of pets and young children. In terms of environmental conditions, it thrives in temperatures ranging between 15°C – 30°C (59°F – 86°F) and can tolerate low humidity. However, in extremely cold temperatures below 10°C (50°F), it may suffer damage.
+                        With proper care, Sansevieria trifasciata can live for several years, providing both aesthetic and functional benefits. Its resilience, low maintenance, and air-purifying properties make it one of the most popular houseplants worldwide. Whether you are an experienced gardener or a beginner looking for an easy-to-care-for plant, the snake plant is an excellent choice.
+                      </p>
+                  </div>
+                  <div class="features">
+                    <h6 class="text-secondary">Features of Sansevieria trifasciata (Snake Plant)</h6>
+                    <ul class=" ms-3" >
+                      <li>Hardy and Low Maintenance – Requires minimal care, making it ideal for beginners and busy individuals.</li>
+                      <li>Air-Purifying – Filters out toxins such as formaldehyde, benzene, xylene, and trichloroethylene, improving indoor air quality.</li>
+                      <li>Drought-Tolerant – Can survive long periods without water, making it resistant to neglect.</li>
+                      <li>Tolerates Low Light – Thrives in various lighting conditions, from bright indirect light to low-light environments.</li>
+                      <li>Unique Oxygen Production – Releases oxygen at night, improving air quality while you sleep.</li>
+                      <li>Architectural Aesthetic – Upright, sword-like leaves add a modern and stylish touch to indoor spaces.</li>
+                      <li>Slow Growth Rate – Does not require frequent repotting, making maintenance even easier.</li>
+                      <li>Easy Propagation – Can be propagated through leaf cuttings or rhizome division.</li>
+                      <li>Resistant to Pests – Rarely affected by common houseplant pests like spider mites and aphids.</li>
+                      <li>Mildly Toxic – Contains saponins, which can be harmful if ingested by pets or children.</li>
+                    </ul>
+                  </div>
+                  <div class="related-plants">
+                    <h3 class="fs-5 text-secondary text-capitalize">related plants</h3>
+                    <div class="row">
+                      <div class="col-md-6 col-lg-4 col-xl-3 p-3">
+                        <a href="plant.html" class="text-decoration-none related-plant d-block position-relative">
+                          <div class="image border rounded p-1">
+                            <img src="assets/articles/ficus elastiva.avif" class="w-100 h-100 rounded" alt="">
+                          </div>
+                          <div class="overlay"></div>
+                          <div class="info position-absolute">
+                            <span class="name text-capitalize text-secondary d-block text-center text-secondary fw-bold">ficus elastiva</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-md-6 col-lg-4 col-xl-3 p-3">
+                        <a href="plant.html" class=" text-decoration-none related-plant d-block">
+                          <div class="image border rounded p-1">
+                            <img src="assets/articles/areca dypsis.avif" class="w-100 h-100 rounded" alt="">
+                          </div>
+                          <div class="overlay"></div>
+                          <div class="info position-absolute">
+                            <span class="name text-capitalize text-secondary d-block text-center text-secondary fw-bold">areca dypsis</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-md-6 col-lg-4 col-xl-3 p-3">
+                        <a href="plant.html" class=" text-decoration-none related-plant d-block">
+                          <div class="image border rounded p-1">
+                            <img src="assets/articles/Pothos.webp" class="w-100 h-100 rounded" alt="">
+                          </div>
+                          <div class="overlay"></div>
+                          <div class="info position-absolute">
+                            <span class="name text-capitalize text-secondary d-block text-center text-secondary fw-bold">pothos</span>
+                          </div>
+                        </a>
+                      </div>
+                      <div class="col-md-6 col-lg-4 col-xl-3 p-3">
+                        <a href="plant.html" class=" text-decoration-none related-plant d-block">
+                          <div class="image border rounded p-1">
+                            <img src="assets/articles/ficus elastiva.avif" class="w-100 h-100 rounded" alt="">
+                          </div>
+                          <div class="overlay"></div>
+                          <div class="info position-absolute">
+                            <span class="name text-capitalize text-secondary d-block text-center text-secondary fw-bold">ficus elastiva</span>
+                          </div>
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-lg-3 mt-3">
+                  <div class="search mb-5 d-flex align-items-center">
+                    <input type="search" class="form-control border-0 border-bottom text-secondary" placeholder="Search Here">
+                    <i class="fa-solid fa-search fs-4 ms-3 cursor-pointer"></i>
+                  </div>
+                 <div class="categories mb-5">
+                  <h4 class="fs-5 text-secondary text-uppercase mb-4">categories</h4>
+                  <ul class="ms-3">
+                    <li class="fw-semibold gray-100">Ornamental Plants</li>
+                    <li class="fw-semibold gray-100">Indoor & Houseplants</li>
+                    <li class="fw-semibold gray-100">Outdoor & Garden Plants</li>
+                    <li class="fw-semibold gray-100">Fruit & Nut Plants</li>
+                    <li class="fw-semibold gray-100">Vegetable & Herb Plants</li>
+                    <li class="fw-semibold gray-100">Medicinal & Aromatic Plants</li>
+                  </ul>
+                 </div>
+                 <!-- <div class="hr w-100 bg-primary" style="height: 2px;"></div> -->
+                 <div class="latest-plants mb-5">
+                  <h4 class="fs-5 text-secondary text-uppercase mb-4">our latest plants</h4>
+                  <div class="latest-plant d-flex align-items-center gap-3 mb-3">
+                    <div class="image">
+                      <img src="assets/articles/ficus elastiva.avif" width="50" height="50" alt="">
+                    </div>
+                    <div class="info">
+                      <h6 class="fs--9 gray-800 text-capitalize">ficus elastiva</h6>
+                      <p class="m-0 fs--8 gray-900">17/02/2025 / 1600(views)</p>
+                    </div>
+                  </div>
+                  <div class="latest-plant d-flex align-items-center gap-3 mb-3">
+                    <div class="image">
+                      <img src="assets/articles/Lavande.webp" width="50" height="50" alt="">
+                    </div>
+                    <div class="info">
+                      <h6 class="fs--9 gray-800 text-capitalize">lavande</h6>
+                      <p class="m-0 fs--8 gray-900">14/02/2025 / 1927(views)</p>
+                    </div>
+                  </div>
+                  <div class="latest-plant d-flex align-items-center gap-3 mb-3">
+                    <div class="image">
+                      <img src="assets/articles/dracaena margninata.webp" width="50" height="50" alt="">
+                    </div>
+                    <div class="info">
+                      <h6 class="fs--9 gray-800 text-capitalize">dracaena margninata</h6>
+                      <p class="m-0 fs--8 gray-900">3/02/2025 / 3292(views)</p>
+                    </div>
+                  </div>
+                 </div>
+                 <div class="reply">
+                  <h4 class="fs-5 text-secondary text-uppercase mb-4">Message</h4>
+                  <form>
+                    <input type="text" placeholder="Full Name" class="form-control mb-3 rounded-pill">
+                    <input type="email" placeholder="Email" class="form-control mb-3 rounded-pill">
+                    <input type="text" placeholder="Subject" class="form-control mb-3 rounded-pill">
+                    <textarea class="form-control mb-3" placeholder="Your Message" rows="5"></textarea>
+                    <div class="d-grid">
+                      <input type="submit" value="Send" class="btn btn-primary text-white rounded-pill">
+                    </div>
+                  </form>
+                 </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+      <div class="container text-white">
+        <div class="row py-5">
+          <div class="col-md-6 col-lg-4 text-center mb-3 text-lg-start">
+            <h6 class="text-capitalize fs-4 mb-3">Nursery</h6>
+            <p class="gray-900 mx-auto mx-lg-0" style="max-width: 300px;">Lorem ipsum dolor sit, amet consectetur adipisicing elit. Aliquid et, dolore saepe iure, suscipit quisquam, fuga</p>
+          </div>
+          <div class="col-md-6 col-lg-4 text-center">
+            <h6 class="text-capitalize fs-4 mb-3">Contact Us</h6>
+            <ul class="list-unstyled">
+              <li class="gray-900 text-capitalize mb-2">
+                <i class="fa-solid fa-envelope"></i>
+                contact@nursery.com
+              </li>
+              <li class="gray-900 text-capitalize mb-2">
+                <i class="fa-solid fa-phone"></i>
+                +2130655069573
+              </li>
+              <li class="gray-900 text-capitalize mb-2">
+                <i class="fa-solid fa-location-dot"></i>
+                Algeria, Tlemcen, Ghazaouet , Road of world
+              </li>
+            </ul>
+          </div>
+          <div class="col-md-6 col-lg-4">
+            <h6 class="text-capitalize fs-4 mb-3 text-center text-lg-end">Follow Us</h6>
+            <ul class="list-unstyled text-center text-lg-end me-lg-5">
+              <li class="gray-900 text-capitalize mb-2">
+                <a href="#" class="text-white"><i class="fa-brands fa-facebook fs-5"></i></a>
+              </li>
+              <li class="gray-900 text-capitalize mb-2">
+                <a href="#" class="text-white"><i class="fa-brands fa-x-twitter fs-5"></i></a>
+              </li>
+              <li class="gray-900 text-capitalize mb-2">
+                <a href="#" class="text-white"><i class="fa-brands fa-instagram fs-5"></i></a>
+              </li>
+              <li class="gray-900 text-capitalize mb-2">
+                <a href="#" class="text-white"><i class="fa-brands fa-pinterest fs-5"></i></a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="overlay"></div>
+    </footer>
+    <div class="copyright bg-primary text-white py-2 text-center fw-semibold">
+      Copyright &copy; 2025 Nursery. All right reserved.
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script>
+       const swiper = new Swiper('.swiper', {
+      // Optional parameters
+      loop: true,
+    
+      // If we need pagination
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    
+      // Navigation arrows
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+    
+      // And if we need scrollbar
+      scrollbar: {
+        el: '.swiper-scrollbar',
+      },
+      slidesPerView: 1,
+    spaceBetween: 10,
+      breakpoints: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20
+        },
+        1200: {
+          slidesPerView: 3,
+          spaceBetween: 30
+        },
+      }
+    });
+
+    const audio = document.getElementById("audio");
+    const playBtn = document.getElementById("play");
+    const progress = document.getElementById("progress");
+    const volume = document.getElementById("volume");
+    const currentTimeEl = document.getElementById("current-time");
+    const durationEl = document.getElementById("duration");
+
+    // Format Time (mm:ss)
+    function formatTime(time) {
+        const minutes = Math.floor(time / 60);
+        const seconds = Math.floor(time % 60).toString().padStart(2, '0');
+        return `${minutes}:${seconds}`;
+    }
+
+    // ▶️ Play / Pause
+    function togglePlay() {
+        if (audio.paused) {
+            audio.play();
+            playBtn.innerHTML = "<i class='fa-solid fa-pause text-secondary px-1 py-2'></i>";
+        } else {
+            audio.pause();
+            playBtn.innerHTML = "<i class='fa-solid fa-play text-secondary px-1 py-2'></i>";
+        }
+    }
+
+    // 📌 Update Progress & Time
+    audio.addEventListener("timeupdate", () => {
+        progress.value = (audio.currentTime / audio.duration) * 100 || 0;
+        currentTimeEl.textContent = formatTime(audio.currentTime);
+    });
+
+    // 📌 Set Total Duration
+    audio.addEventListener("loadedmetadata", () => {
+        durationEl.textContent = formatTime(audio.duration);
+    });
+
+    // 📌 Seek Song
+    progress.addEventListener("input", () => {
+        audio.currentTime = (progress.value / 100) * audio.duration;
+    });
+
+    // 🔊 Volume Control
+    volume.addEventListener("input", () => {
+        audio.volume = volume.value;
+    });
+
+    // 🎵 Event Listener
+    playBtn.addEventListener("click", togglePlay);
+
+    
+    document.getElementById('search-icon').addEventListener('click',function(){
+      document.getElementById('search-form').classList.toggle('d-none');
+      document.getElementById('search-form').style.width = 'auto';
+      this.style.display = 'none'
+    })
+
+    </script>
+</body>
+</html>
