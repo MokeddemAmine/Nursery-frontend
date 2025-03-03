@@ -12138,6 +12138,13 @@ footer .container {
   color: black;
 }
 
+.about-page .image {
+  max-width: 400px;
+}
+.about-page .image img {
+  max-width: 100%;
+}
+
 .fs--9 {
   font-size: 0.9rem;
 }
